@@ -16,4 +16,8 @@ Al menos en mi caso me pasa que después de un rato los números empiezan a avan
 Algo que también note es que si piso la posición usando game.at el problema desaparece, así que agregue que si se aprieta la barra de espacio pise la posicion del objeto con la misma posición en la que estaba pero usando game.at para lograr eso.
 Y al menos en mi caso noto que cuando hago eso (apretar espacio) los números vuelven a subir muy rapido.
 
-Acá se puede ver una demo: https://streamable.com/ue2d9w
+Acá se puede ver una demo: https://streamable.com/bwy4m1
+
+## Alternando entre ambas para comparar
+
+En la branch `calculadora-de-posiciones-con-multiples-estrategias` agregué código para que apretando la tecla *z* se pueda cambiar entre usar up y right para calcular la nueva posición y usar game.at. Se puede notar que con game.at va mucho más rápido.
