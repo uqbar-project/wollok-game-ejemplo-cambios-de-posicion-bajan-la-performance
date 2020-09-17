@@ -17,3 +17,9 @@ Algo que también note es que si piso la posición usando game.at el problema de
 Y al menos en mi caso noto que cuando hago eso (apretar espacio) los números vuelven a subir muy rapido.
 
 Acá se puede ver una demo: https://streamable.com/bwy4m1
+
+También agregué que si se apreta la tecla Z en vez de usar right y up para cambiar la posicion use game.at, y ahí se puede ver que también anda mucho más rapido.
+
+## Alternando entre ambas para comparar
+
+En la branch `calculadora-de-posiciones-con-multiples-estrategias` agregué código para que apretando la tecla *z* se pueda cambiar entre usar up y right para calcular la nueva posición y usar game.at. Se puede notar que con game.at va mucho más rápido.
