@@ -31,6 +31,7 @@ program juego {
 	})
 	
 	keyboard.space().onPressDo {
+		console.println("apretado espacio")
 		personaje.position(game.at(personaje.position().x(), personaje.position().y()))
 	}
 	
