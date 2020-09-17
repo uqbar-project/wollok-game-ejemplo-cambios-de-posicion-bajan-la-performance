@@ -1,0 +1,38 @@
+import wollok.game.*
+
+object personaje {
+	var property position = game.at(0, 0)
+}
+
+object contador {
+	var numero = 0
+	method contar() {
+		numero += 1
+	}
+	method porCuantoVas() {
+		console.println(numero)
+	}
+}
+
+program juego {
+	game.cellSize(1)
+	game.width(1)
+	game.height(1)
+	
+	game.onTick(1, "mostrar numero", {
+		contador.contar()
+		contador.porCuantoVas()
+	})
+
+	game.addVisual(personaje)
+
+	game.onTick(1, "moverse", {
+		personaje.position(personaje.position().right(1).up(1))
+	})
+	
+	keyboard.space().onPressDo {
+		personaje.position(game.at(personaje.position().x(), personaje.position().y()))
+	}
+	
+	game.start()
+}
